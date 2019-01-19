@@ -17,7 +17,10 @@
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
 <video id="video" autoplay loop crossOrigin="anonymous" webkit-playsinline style="display:none">
-	<source src="video/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+
+	<!--<source src="video/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+	<source src="video/sintel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>-->
+
 	<source src="video/sintel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
 		
@@ -54,7 +57,7 @@ function initialize()
 		alpha: true
 	});
 	renderer.setClearColor(new THREE.Color('lightgrey'), 0)
-	renderer.setSize( 640, 480 );
+	renderer.setSize( 1280, 720 );
 	renderer.domElement.style.position = 'absolute'
 	renderer.domElement.style.top = '0px'
 	renderer.domElement.style.left = '0px'
